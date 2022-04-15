@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', '@sanity/cli' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData @sanity/cli
+8 silly fetchNamedPackageData @sanity/cli
+9 silly mapToRegistry name @sanity/cli
+10 silly mapToRegistry scope (from package name) @sanity
+11 verbose mapToRegistry no registry URL found in name for scope @sanity
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/@sanity%2fcli
+15 verbose request uri https://registry.npmjs.org/@sanity%2fcli
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 4:29:39 PM
+18 verbose request id 6253a7a5e6c14250
+19 verbose etag W/"6a5788ed628654e3f361890178e9bbf0"
+20 verbose lastModified Fri, 08 Apr 2022 15:12:26 GMT
+21 http request GET https://registry.npmjs.org/@sanity%2fcli
+22 http 304 https://registry.npmjs.org/@sanity%2fcli
+23 verbose headers { date: 'Thu, 14 Apr 2022 23:29:40 GMT',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'cf-ray': '6fc0399029b7253c-SJC',
+23 verbose headers   age: '65',
+23 verbose headers   'cache-control': 'public, max-age=300',
+23 verbose headers   etag: '"6a5788ed628654e3f361890178e9bbf0"',
+23 verbose headers   'last-modified': 'Fri, 08 Apr 2022 15:12:26 GMT',
+23 verbose headers   vary: 'Accept-Encoding',
+23 verbose headers   'cf-cache-status': 'HIT',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   'x-amz-replication-status': 'COMPLETED',
+23 verbose headers   server: 'cloudflare' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Thu, 14 Apr 2022 23:29:40 GMT',
+24 silly get     connection: 'keep-alive',
+24 silly get     'cf-ray': '6fc0399029b7253c-SJC',
+24 silly get     age: '65',
+24 silly get     'cache-control': 'public, max-age=300',
+24 silly get     etag: '"6a5788ed628654e3f361890178e9bbf0"',
+24 silly get     'last-modified': 'Fri, 08 Apr 2022 15:12:26 GMT',
+24 silly get     vary: 'Accept-Encoding',
+24 silly get     'cf-cache-status': 'HIT',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     'x-amz-replication-status': 'COMPLETED',
+24 silly get     server: 'cloudflare' } ]
+25 verbose etag https://registry.npmjs.org/@sanity%2fcli from cache
+26 verbose get saving @sanity/cli to /home/yuria/.npm/registry.npmjs.org/_40sanity_252fcli/.cache.json
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule @sanity/cli@2.29.5 checking installable status
+40 silly cache add args [ '@sanity/cli', null ]
+41 verbose cache add spec @sanity/cli
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: '@sanity/cli',
+42 silly cache add   scope: '@sanity',
+42 silly cache add   name: '@sanity/cli',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed @sanity/cli@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for @sanity/cli
+45 info addNameTag [ '@sanity/cli', 'latest' ]
+46 silly mapToRegistry name @sanity/cli
+47 silly mapToRegistry scope (from package name) @sanity
+48 verbose mapToRegistry no registry URL found in name for scope @sanity
+49 silly mapToRegistry using default registry
+50 silly mapToRegistry registry https://registry.npmjs.org/
+51 silly mapToRegistry uri https://registry.npmjs.org/@sanity%2fcli
+52 verbose addNameTag registry:https://registry.npmjs.org/@sanity%2fcli not in flight; fetching
+53 verbose get https://registry.npmjs.org/@sanity%2fcli not expired, no request
+54 silly addNameTag next cb for @sanity/cli with tag latest
+55 silly addNamed @sanity/cli@2.29.5
+56 verbose addNamed "2.29.5" is a plain semver version for @sanity/cli
+57 silly cache afterAdd @sanity/cli@2.29.5
+58 verbose afterAdd /home/yuria/.npm/@sanity/cli/2.29.5/package/package.json not in flight; writing
+59 verbose afterAdd /home/yuria/.npm/@sanity/cli/2.29.5/package/package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly idealTree:prePrune lib
+61 silly idealTree:prePrune └── @sanity/cli@2.29.5
+62 silly loadIdealTree Finishing
+63 silly currentTree lib
+64 silly idealTree lib
+64 silly idealTree └── @sanity/cli@2.29.5
+65 silly generateActionsToTake Starting
+66 silly install generateActionsToTake
+67 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+68 silly rollbackFailedOptional Starting
+69 silly rollbackFailedOptional Finishing
+70 silly runTopLevelLifecycles Starting
+71 silly runTopLevelLifecycles Finishing
+72 silly install printInstalled
+73 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+74 verbose cwd /home/yuria/Documents/jsm_portfolio/backend_sanity
+75 error Linux 5.4.0-99-generic
+76 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "@sanity/cli"
+77 error node v8.10.0
+78 error npm  v3.5.2
+79 error path /usr/local/lib/node_modules
+80 error code EACCES
+81 error errno -13
+82 error syscall access
+83 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+83 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+83 error   errno: -13,
+83 error   code: 'EACCES',
+83 error   syscall: 'access',
+83 error   path: '/usr/local/lib/node_modules' }
+84 error Please try running this command again as root/Administrator.
+85 verbose exit [ -13, true ]
